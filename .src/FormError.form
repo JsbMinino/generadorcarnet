@@ -1,0 +1,22 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,64,64)
+  { TextArea1 TextArea
+    MoveScaled(2,8,59,49)
+    Text = ("Mensaje de Error:")
+    Wrap = True
+  }
+  { Button1 Button
+    MoveScaled(4,58,25,6)
+    Text = ("Copiar Al portapapeles")
+  }
+  { ButtonSalir Button
+    MoveScaled(40,58,17,6)
+    Text = ("Salir")
+  }
+  { TextLabel1 TextLabel
+    MoveScaled(2,1,60,6)
+    Text = ("TextLabel1")
+  }
+}

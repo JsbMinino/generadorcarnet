@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Sun, 22 Dec 2019 12:00:00 +0000
+Source: generadorcarnet
+Binary: generadorcarnet
+Architecture: source all
+Version: 0.0.55-1
+Distribution: unstable
+Urgency: low
+Maintainer: jsbsan <jusabejusabe@gmail.com>
+Changed-By: jsbsan <jusabejusabe@gmail.com>
+Description:
+ generadorcarnet - Genera facilmente carnets para tus alumnos, empleados, etc.
+Changes:
+ generadorcarnet (0.0.55-1) unstable; urgency=low
+ .
+   * version minimo2020, 12 dic 2019
+Checksums-Sha1:
+ 43c21d12f3e5fbfe2a951ea79800134ae9619677 1282 generadorcarnet_0.0.55-1.dsc
+ 4616a2bdd00191495a6d7b29a3d533fa733320ab 1621 generadorcarnet_0.0.55-1.diff.gz
+ dd03d959fb48772bd686a654e2084d8afe094d4c 276540 generadorcarnet_0.0.55-1_all.deb
+ b8df4888c42a480a9b39164764567e19b85ce07e 10174 generadorcarnet_0.0.55-1_amd64.buildinfo
+Checksums-Sha256:
+ cfe8614ca5f5eb5e45125886f8a6fcf81b257f1775432ea4bac3142dc79d049d 1282 generadorcarnet_0.0.55-1.dsc
+ 5253e3abdc06166329d83f3ea71434f92a9d6aa693eeb25506fa278351bfdfb8 1621 generadorcarnet_0.0.55-1.diff.gz
+ f5a5242958a925043fcea3dc4895303f21cdd1595fea26ba1b51a97c56e55582 276540 generadorcarnet_0.0.55-1_all.deb
+ 40c109a22eea24d3befa4b228a31105668581202e25298a868989c7cedeb9da0 10174 generadorcarnet_0.0.55-1_amd64.buildinfo
+Files:
+ bfffec3dfff5f0a4f46d24dbfff1ef39 1282 contrib/graphics optional generadorcarnet_0.0.55-1.dsc
+ 7c215d0b202957e3155e60daec0484e9 1621 contrib/graphics optional generadorcarnet_0.0.55-1.diff.gz
+ 1b0b65c93072934bd1fbc25eb4955e1d 276540 contrib/graphics optional generadorcarnet_0.0.55-1_all.deb
+ 7033fc784f80812759980a473019fb66 10174 contrib/graphics optional generadorcarnet_0.0.55-1_amd64.buildinfo

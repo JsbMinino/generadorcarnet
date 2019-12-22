@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Sun, 22 Dec 2019 12:00:00 +0000
+Source: generadorcarnet-qt4
+Binary: generadorcarnet-qt4
+Architecture: source all
+Version: 0.0.55-1
+Distribution: unstable
+Urgency: low
+Maintainer: jsbsan <jusabejusabe@gmail.com>
+Changed-By: jsbsan <jusabejusabe@gmail.com>
+Description:
+ generadorcarnet-qt4 - qt4 package for Generador De Carnets
+Changes:
+ generadorcarnet-qt4 (0.0.55-1) unstable; urgency=low
+ .
+   * version minimo2020, 12 dic 2019
+Checksums-Sha1:
+ 9da0ca00df99eda66b9860a3380db51281d6a74e 582 generadorcarnet-qt4_0.0.55-1.dsc
+ b1bb9667ad5dbe62c5885cbeecb3a647e91feb9f 946 generadorcarnet-qt4_0.0.55-1.tar.gz
+ 0f9ab5bbeef7fe4147e5e7fda0742808d87830e2 1468 generadorcarnet-qt4_0.0.55-1_all.deb
+ 1a480ed9d0508f87f4fc27363a976f1389faaf5a 4578 generadorcarnet-qt4_0.0.55-1_amd64.buildinfo
+Checksums-Sha256:
+ 244faddded66c22ea6213ee777fe70b94800af26ee2b5b21b0aedc1836a054a3 582 generadorcarnet-qt4_0.0.55-1.dsc
+ ae34d54146841054d22a4fd1507d9f37ba2e7d2ead86b4805a1402e26ecd85fa 946 generadorcarnet-qt4_0.0.55-1.tar.gz
+ 93f1949da40a7a75a72850df853b41bf4a947959af77a5f74b8891351ee9b630 1468 generadorcarnet-qt4_0.0.55-1_all.deb
+ 9c1251085dad6ce59c1dcbea2148f25a944ef99e659af2434266c6e5314808f3 4578 generadorcarnet-qt4_0.0.55-1_amd64.buildinfo
+Files:
+ 306554c75589b8a8bac990ee3c236002 582 contrib/graphics optional generadorcarnet-qt4_0.0.55-1.dsc
+ 61195344c16b84e91c191c067e724e7e 946 contrib/graphics optional generadorcarnet-qt4_0.0.55-1.tar.gz
+ e367e994e9b64a55e80ac85013bd474d 1468 contrib/graphics optional generadorcarnet-qt4_0.0.55-1_all.deb
+ e7f88d22e8571c1f33de2f9ef74798ed 4578 contrib/graphics optional generadorcarnet-qt4_0.0.55-1_amd64.buildinfo

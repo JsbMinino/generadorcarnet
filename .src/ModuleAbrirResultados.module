@@ -1,0 +1,84 @@
+' Gambas module file
+
+Public Sub abrir(direccion As String)
+
+  'aqui2
+  'preguntar por ruta donde se guardan los resultados....
+  Dim RutaParaAbrir As String
+  Dim rutaUsuario As New String[]
+  Dim felegirRuta As New FormRutaResultados
+
+  If Right$(direccion) = "/" Then direccion = Mid$(direccion, 1, Len(direccion) - 1)
+
+  felegirRuta.valor = rutaUsuario
+  felegirRuta.Showmodal()
+  If rutaUsuario.count = 0 Then
+    'no ha elegido ninguna ruta... la ruta es la direccion de trabajor
+    RutaParaAbrir = direccion
+  Else
+    RutaParaAbrir = rutaUsuario[0]
+    'mover todos los archivos de la ruta inicial a rutaparaabrir
+    ModuleUtilidadesDisco.MoverFicheros(direccion, RutaParaAbrir)
+  Endif
+  '
+  If comprobarInstalacion("caja") Then
+    'esta instalado caja
+    Exec ["caja", "--no-desktop", RutaParaAbrir] ', "&"]
+  Else
+    'si caja no esta instalado
+    'Exec ["pcmanfm", RutaParaAbrir, "&"]
+    Exec [ListaNavegadoresDisponibles(), RutaParaAbrir] ', "&"]
+  Endif
+
+End
+
+Private Function comprobarInstalacion(comando As String) As Boolean
+
+  Dim respuesta As String
+
+  Shell "which " & comando To respuesta
+
+  If respuesta = "" Then
+    Return False 'no esta instalado
+  Else
+    Return True
+
+  Endif
+
+End
+
+'------------- lista de exploradores de archivos disponibles ---------------
+
+Public Function ListaNavegadoresDisponibles() As String
+
+  Dim lista As New String[]
+  Dim navegador As String
+  Dim valor As String
+
+  'caja
+  lista.Add("caja")
+  'pcmanfm
+  lista.Add("pcmanfm")
+  'nautilus
+  lista.Add("nautilus")
+  '  dolphin
+  lista.Add("dolphin")
+  'konqueror
+  lista.Add("konqueror")
+  'thunar
+  lista.Add("thunar")
+  'rox - filer
+  lista.Add("rox-filer")
+  'xfe
+  lista.Add("xfe")
+  'krusader
+  lista.Add("krusader")
+
+  For Each navegador In lista
+    Shell "which " & navegador To valor
+    If valor <> "" Then Return navegador
+  Next
+
+  Return ""
+
+End
